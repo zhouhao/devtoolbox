@@ -10,16 +10,16 @@ Fast, no-login developer utilities. This repo is the engineering foundation (mil
 
 Boring, well-supported, fast to deploy. Every choice optimizes for shipping speed and reversibility.
 
-| Concern      | Choice                   | Why                                                                                   |
-| ------------ | ------------------------ | ------------------------------------------------------------------------------------- |
-| Language     | TypeScript               | Type safety with near-zero ceremony; the default for serious web work.                |
-| UI framework | React 18                 | Ubiquitous, well-documented, huge ecosystem. No exotic bets for a v0.                 |
-| Build tool   | Vite 6                   | Instant dev server, fast static builds, first-class TS/React support.                 |
-| Tests        | Vitest + Testing Library | Shares Vite config, near-zero setup, Jest-compatible API.                             |
-| Lint         | ESLint 9 (flat config)   | Standard. Catches bugs and enforces React hooks rules.                                |
-| Format       | Prettier 3               | Opinionated, ends formatting debates.                                                 |
-| CI           | GitHub Actions           | Already where the code lives; no extra service.                                       |
-| Hosting      | GitHub Pages             | Free static hosting with **zero secret management** — deploys via the built-in token. |
+| Concern      | Choice                     | Why                                                                                   |
+| ------------ | -------------------------- | ------------------------------------------------------------------------------------- |
+| Language     | TypeScript                 | Type safety with near-zero ceremony; the default for serious web work.                |
+| UI framework | React 18                   | Ubiquitous, well-documented, huge ecosystem. No exotic bets for a v0.                 |
+| Build tool   | Vite 6                     | Instant dev server, fast static builds, first-class TS/React support.                 |
+| Tests        | Vitest 4 + Testing Library | Shares Vite config, near-zero setup, Jest-compatible API.                             |
+| Lint         | ESLint 9 (flat config)     | Standard. Catches bugs and enforces React hooks rules.                                |
+| Format       | Prettier 3                 | Opinionated, ends formatting debates.                                                 |
+| CI           | GitHub Actions             | Already where the code lives; no extra service.                                       |
+| Hosting      | GitHub Pages               | Free static hosting with **zero secret management** — deploys via the built-in token. |
 
 **Why GitHub Pages over Cloudflare/Vercel for v0:** the product thesis is a static, no-login, no-backend app. Pages serves that perfectly and the deploy needs no API tokens stored as repo secrets (it uses the Actions `GITHUB_TOKEN`). That keeps the foundation simple and secret-free.
 
