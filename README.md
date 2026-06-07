@@ -2,7 +2,7 @@
 
 Fast, no-login developer utilities. This repo is the engineering foundation (milestone **M0**): a web app that builds, tests, and deploys a live placeholder. Real tools land in later milestones (first up: a JSON formatter + validator).
 
-**Live:** https://zhouhao.github.io/devtoolbox/
+**Live:** https://hzhou.dev/devtoolbox/ (the `zhouhao.github.io/devtoolbox/` URL redirects here — the account uses a verified custom domain)
 
 ---
 
